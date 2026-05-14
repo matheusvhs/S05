@@ -1,0 +1,730 @@
+/* ========== VAGAS ESPECÍFICO ========== */
+
+.vagas-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.vagas-header h1 {
+  font-size: 2rem;
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+}
+
+.vagas-header p {
+  color: var(--cor-texto-secundario);
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.vagas-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.stat-card {
+  background: var(--cor-fundo-card);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 8px var(--cor-sombra);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px var(--cor-sombra);
+}
+
+.stat-card .material-symbols-outlined {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-info {
+  flex: 1;
+}
+
+.stat-valor {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+}
+
+/* Filtros */
+.filtros-container {
+  background: var(--cor-fundo-card);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px var(--cor-sombra);
+}
+
+.filtros-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filtros-header h2 {
+  font-size: 1.3rem;
+  color: var(--cor-texto);
+}
+
+.btn-limpar-filtros {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cor-erro);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-limpar-filtros:hover {
+  background: #c62828;
+  transform: scale(1.05);
+}
+
+.filtros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.filtro-item label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+  margin-bottom: 8px;
+}
+
+.filtro-item select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 8px;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtro-item select:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+/* Lista de Vagas */
+.vagas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vaga-card {
+  background: var(--cor-fundo-card);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px var(--cor-sombra);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.vaga-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--cor-primaria);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.vaga-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 16px var(--cor-sombra);
+}
+
+.vaga-card:hover::before {
+  transform: scaleY(1);
+}
+
+.vaga-card.destaque {
+  border: 2px solid var(--cor-alerta);
+  background: linear-gradient(135deg, var(--cor-fundo-card) 0%, rgba(255, 152, 0, 0.05) 100%);
+}
+
+.vaga-card.ja-candidatado {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.vaga-card.ja-candidatado:hover {
+  transform: none;
+}
+
+.vaga-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.vaga-empresa-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.empresa-logo {
+  font-size: 3rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-fundo);
+  border-radius: 12px;
+  border: 2px solid var(--cor-borda);
+}
+
+.vaga-titulo-area {
+  flex: 1;
+}
+
+.vaga-titulo-area h3 {
+  font-size: 1.3rem;
+  color: var(--cor-texto);
+  margin-bottom: 5px;
+}
+
+.vaga-empresa {
+  color: var(--cor-texto-secundario);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.vaga-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tag.area {
+  background: var(--cor-info);
+  color: white;
+}
+
+.tag.modalidade {
+  background: var(--cor-sucesso);
+  color: white;
+}
+
+.tag.destaque {
+  background: var(--cor-alerta);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.vaga-match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.match-circulo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.match-circulo.alto {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+}
+
+.match-circulo.medio {
+  background: linear-gradient(135deg, #FF9800, #f57c00);
+}
+
+.match-circulo.baixo {
+  background: linear-gradient(135deg, #F44336, #d32f2f);
+}
+
+.match-label {
+  font-size: 0.8rem;
+  color: var(--cor-texto-secundario);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.vaga-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.vaga-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cor-texto-secundario);
+  font-size: 0.95rem;
+}
+
+.vaga-info-item .material-symbols-outlined {
+  color: var(--cor-primaria);
+  font-size: 1.2rem;
+}
+
+.vaga-descricao-preview {
+  color: var(--cor-texto);
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.vaga-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cor-borda);
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.vaga-candidatos {
+  color: var(--cor-texto-secundario);
+  font-size: 0.9rem;
+}
+
+.btn-ver-detalhes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-ver-detalhes:hover {
+  background: var(--cor-primaria-escura);
+  transform: scale(1.05);
+}
+
+.badge-candidatado {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cor-sucesso);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Modal de Vaga */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-vaga {
+  background: var(--cor-fundo-card);
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 2px solid var(--cor-borda);
+  position: sticky;
+  top: 0;
+  background: var(--cor-fundo-card);
+  z-index: 10;
+}
+
+.btn-voltar,
+.btn-fechar-modal {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  border: 2px solid var(--cor-borda);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-voltar:hover,
+.btn-fechar-modal:hover {
+  background: var(--cor-primaria);
+  color: white;
+  border-color: var(--cor-primaria);
+}
+
+.modal-content {
+  padding: 30px;
+}
+
+.modal-vaga-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal-empresa-logo {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.modal-vaga-header h2 {
+  font-size: 2rem;
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+}
+
+.modal-vaga-header .empresa-nome {
+  font-size: 1.2rem;
+  color: var(--cor-texto-secundario);
+  margin-bottom: 15px;
+}
+
+.modal-info-principal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+  padding: 25px;
+  background: var(--cor-fundo);
+  border-radius: 12px;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item .material-symbols-outlined {
+  font-size: 2rem;
+  color: var(--cor-primaria);
+  margin-bottom: 8px;
+}
+
+.info-label {
+  font-size: 0.85rem;
+  color: var(--cor-texto-secundario);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-valor {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+.secao-vaga {
+  margin: 30px 0;
+}
+
+.secao-vaga h3 {
+  font-size: 1.4rem;
+  color: var(--cor-texto);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.secao-vaga h3 .material-symbols-outlined {
+  color: var(--cor-primaria);
+}
+
+.secao-vaga p {
+  color: var(--cor-texto);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.secao-vaga ul {
+  list-style: none;
+  padding: 0;
+}
+
+.secao-vaga li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: var(--cor-fundo);
+  border-left: 4px solid var(--cor-primaria);
+  border-radius: 6px;
+  color: var(--cor-texto);
+  transition: all 0.3s ease;
+}
+
+.secao-vaga li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px var(--cor-sombra);
+}
+
+.candidatura-rapida {
+  position: sticky;
+  bottom: 0;
+  background: var(--cor-fundo-card);
+  padding: 25px 30px;
+  border-top: 2px solid var(--cor-borda);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.candidatura-info {
+  flex: 1;
+}
+
+.candidatura-info h4 {
+  font-size: 1.2rem;
+  color: var(--cor-texto);
+  margin-bottom: 5px;
+}
+
+.candidatura-info p {
+  color: var(--cor-texto-secundario);
+  font-size: 0.9rem;
+}
+
+.btn-candidatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--cor-sucesso), #45a049);
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.btn-candidatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.btn-candidatar:disabled {
+  background: var(--cor-texto-secundario);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Modal de Confirmação */
+.modal-confirmacao {
+  background: var(--cor-fundo-card);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.confirmacao-icon {
+  font-size: 5rem;
+  color: var(--cor-sucesso);
+  margin-bottom: 20px;
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-confirmacao h2 {
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+  margin-bottom: 15px;
+}
+
+.modal-confirmacao p {
+  color: var(--cor-texto-secundario);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.btn-ok {
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-ok:hover {
+  background: var(--cor-primaria-escura);
+  transform: scale(1.05);
+}
+
+/* Mensagem de sem vagas */
+.sem-vagas {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--cor-texto-secundario);
+}
+
+.sem-vagas .material-symbols-outlined {
+  font-size: 5rem;
+  opacity: 0.3;
+  margin-bottom: 20px;
+}
+
+.sem-vagas h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--cor-texto);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .vagas-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .vagas-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .filtros-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .vaga-header {
+    flex-direction: column;
+  }
+  
+  .vaga-match {
+    align-self: flex-end;
+  }
+  
+  .vaga-info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-info-principal {
+    grid-template-columns: 1fr;
+  }
+  
+  .candidatura-rapida {
+    flex-direction: column;
+    text-align: center;
+  }
+}

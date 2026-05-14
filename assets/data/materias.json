@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "codigo": "S205",
+    "nome": "Interface Homem-máquina",
+    "professor": "Prof. Dr. Carlos Silva",
+    "creditos": 4,
+    "carga_horaria": 80,
+    "ementa": "Estudo de interfaces gráficas, usabilidade, experiência do usuário e desenvolvimento web moderno."
+  },
+  {
+    "id": 2,
+    "codigo": "E201",
+    "nome": "Circuitos Elétricos em Corrente Contínua",
+    "professor": "Prof. Dr. Ana Paula Oliveira",
+    "creditos": 4,
+    "carga_horaria": 80,
+    "ementa": "Análise de circuitos elétricos, leis de Kirchhoff, teoremas de Thévenin e Norton."
+  },
+  {
+    "id": 3,
+    "codigo": "M202",
+    "nome": "Álgebra e Geometria Analítica",
+    "professor": "Prof. Msc. Roberto Fernandes",
+    "creditos": 4,
+    "carga_horaria": 80,
+    "ementa": "Vetores, matrizes, sistemas lineares, geometria analítica e transformações lineares."
+  },
+  {
+    "id": 4,
+    "codigo": "C301",
+    "nome": "Estruturas de Dados",
+    "professor": "Prof. Dr. Marcos Vinícius",
+    "creditos": 4,
+    "carga_horaria": 80,
+    "ementa": "Listas, pilhas, filas, árvores, grafos e algoritmos de ordenação e busca."
+  },
+  {
+    "id": 5,
+    "codigo": "F102",
+    "nome": "Física II - Eletromagnetismo",
+    "professor": "Prof. Dr. João Pedro Costa",
+    "creditos": 4,
+    "carga_horaria": 80,
+    "ementa": "Campo elétrico, campo magnético, Lei de Faraday, indução eletromagnética."
+  },
+  {
+    "id": 6,
+    "codigo": "P201",
+    "nome": "Programação Orientada a Objetos",
+    "professor": "Prof. Msc. Patricia Lima",
+    "creditos": 4,
+    "carga_horaria": 80,
+    "ementa": "Conceitos de POO, classes, objetos, herança, polimorfismo e encapsulamento."
+  }
+]

@@ -1,0 +1,403 @@
+/* ========== VARIÁVEIS DE TEMAS ========== */
+:root {
+  /* Tema Inatel (Padrão) */
+  --cor-primaria: #126ae2;
+  --cor-primaria-escura: #0a599b;
+  --cor-secundaria: #6a937a;
+  --cor-texto: #1a1a1a;
+  --cor-texto-secundario: #666666;
+  --cor-fundo: #edf2f4;
+  --cor-fundo-card: #ffffff;
+  --cor-fundo-hover: #f8f9fa;
+  --cor-borda: #e0e0e0;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+  
+  /* Cores de Status */
+  --cor-sucesso: #4caf50;
+  --cor-alerta: #ff9800;
+  --cor-erro: #f44336;
+  --cor-info: #2196f3;
+  
+  /* Cores de Frequência */
+  --cor-frequencia-ok: #4caf50;
+  --cor-frequencia-alerta: #ff9800;
+  --cor-frequencia-critico: #f44336;
+  
+  /* Cores de Nota */
+  --cor-nota-alta: #4caf50;
+  --cor-nota-media: #ff9800;
+  --cor-nota-baixa: #f44336;
+}
+
+/* Tema Limão */
+[data-theme="limao"] {
+  --cor-primaria: #38184C;
+  --cor-primaria-escura: #9b0a59;
+  --cor-secundaria: #4f6a93;
+  --cor-texto: #1a1a1a;
+  --cor-texto-secundario: #555555;
+  --cor-fundo: #CEF09D;
+  --cor-fundo-card: #ffffff;
+  --cor-fundo-hover: #f5f5f5;
+  --cor-borda: #d0d0d0;
+  --cor-sombra: rgba(0, 0, 0, 0.15);
+}
+
+/* Tema Dark */
+[data-theme="dark"] {
+  --cor-primaria: #CEF09D;
+  --cor-primaria-escura: #a8d07a;
+  --cor-secundaria: #4f6a93;
+  --cor-texto: #e0e0e0;
+  --cor-texto-secundario: #b0b0b0;
+  --cor-fundo: #1a1a1a;
+  --cor-fundo-card: #2d2d2d;
+  --cor-fundo-hover: #383838;
+  --cor-borda: #404040;
+  --cor-sombra: rgba(0, 0, 0, 0.4);
+}
+
+/* ========== RESET E BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arimo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: var(--cor-fundo-card);
+  box-shadow: 0 2px 8px var(--cor-sombra);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+.logo svg {
+  width: 100px;
+  height: auto;
+}
+
+.logo .path-logo {
+  fill: var(--cor-primaria);
+  transition: fill 0.3s ease;
+}
+
+.perfil-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.perfil-icon:hover {
+  transform: scale(1.1);
+}
+
+/* ========== NAVEGAÇÃO LATERAL ========== */
+.sidebar {
+  position: fixed;
+  left: -300px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: var(--cor-fundo-card);
+  box-shadow: 2px 0 10px var(--cor-sombra);
+  transition: left 0.3s ease;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--cor-borda);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h2 {
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+}
+
+.close-sidebar {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--cor-texto-secundario);
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.sidebar-menu li {
+  margin: 0;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: var(--cor-texto);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background-color: var(--cor-fundo-hover);
+  border-left-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.sidebar-menu .material-symbols-outlined {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.theme-selector h3 {
+  margin-bottom: 15px;
+  color: var(--cor-texto);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.theme-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.theme-btn {
+  padding: 10px 15px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 8px;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.theme-btn:hover {
+  border-color: var(--cor-primaria);
+  background-color: var(--cor-fundo-hover);
+  transform: translateX(5px);
+}
+
+/* Overlay para fechar sidebar */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1999;
+  display: none;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+/* ========== CONTAINER PRINCIPAL ========== */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ========== CARDS ========== */
+.card {
+  background-color: var(--cor-fundo-card);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px var(--cor-sombra);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px var(--cor-sombra);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--cor-borda);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+/* ========== ÍCONES ========== */
+.material-symbols-outlined {
+  color: var(--cor-primaria);
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.icon-small {
+  font-size: 18px;
+}
+
+.icon-medium {
+  font-size: 24px;
+}
+
+.icon-large {
+  font-size: 32px;
+}
+
+/* ========== BADGES E LABELS ========== */
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.badge-ok {
+  background-color: var(--cor-frequencia-ok);
+}
+
+.badge-alerta {
+  background-color: var(--cor-frequencia-alerta);
+}
+
+.badge-critico {
+  background-color: var(--cor-frequencia-critico);
+}
+
+.badge-info {
+  background-color: var(--cor-info);
+}
+
+/* ========== BOTÕES ========== */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-primaria-escura);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--cor-sombra);
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 15px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* ========== ANIMAÇÕES ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* ========== SCROLLBAR CUSTOMIZADA ========== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-primaria);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-primaria-escura);
+}

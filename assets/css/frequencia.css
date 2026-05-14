@@ -1,0 +1,156 @@
+/* ========== FREQUÊNCIA ESPECÍFICO ========== */
+
+.frequencia-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.frequencia-card {
+  background-color: var(--cor-fundo-card);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px var(--cor-sombra);
+  transition: all 0.3s ease;
+}
+
+.frequencia-card:hover {
+  box-shadow: 0 4px 16px var(--cor-sombra);
+  transform: translateY(-2px);
+}
+
+.frequencia-card.status-ok {
+  border-left: 6px solid var(--cor-frequencia-ok);
+}
+
+.frequencia-card.status-alerta {
+  border-left: 6px solid var(--cor-frequencia-alerta);
+}
+
+.frequencia-card.status-critico {
+  border-left: 6px solid var(--cor-frequencia-critico);
+  animation: pulse-border 2s infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% { box-shadow: 0 2px 8px var(--cor-sombra); }
+  50% { box-shadow: 0 2px 8px var(--cor-sombra), 0 0 0 4px rgba(244, 67, 54, 0.2); }
+}
+
+.frequencia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.frequencia-materia-info h3 {
+  font-size: 1.3rem;
+  color: var(--cor-texto);
+  margin-bottom: 5px;
+}
+
+.frequencia-materia-codigo {
+  color: var(--cor-texto-secundario);
+  font-size: 0.9rem;
+}
+
+.frequencia-status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.frequencia-progress-container {
+  margin: 20px 0;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+  font-weight: 600;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 30px;
+  background-color: var(--cor-fundo);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: width 0.8s ease;
+  border-radius: 15px;
+}
+
+.frequencia-detalhes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.detalhe-item {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--cor-fundo-hover);
+  border-radius: 8px;
+}
+
+.detalhe-valor {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.detalhe-label {
+  font-size: 0.8rem;
+  color: var(--cor-texto-secundario);
+  text-transform: uppercase;
+}
+
+.alerta-faltas {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: rgba(244, 67, 54, 0.1);
+  border: 1px solid var(--cor-frequencia-critico);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cor-frequencia-critico);
+}
+
+.alerta-faltas .material-symbols-outlined {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .frequencia-header {
+    flex-direction: column;
+  }
+  
+  .frequencia-detalhes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

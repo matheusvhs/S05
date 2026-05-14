@@ -1,0 +1,144 @@
+[
+  {
+    "dia": "Segunda",
+    "dia_cod": "seg",
+    "aulas": [
+      {
+        "horario": "08:00 - 09:40",
+        "materia_id": 4,
+        "materia": "Estruturas de Dados",
+        "codigo": "C301",
+        "sala": "P2-L01",
+        "tipo": "Prática"
+      },
+      {
+        "horario": "10:00 - 11:40",
+        "materia_id": 2,
+        "materia": "Circuitos Elétricos",
+        "codigo": "E201",
+        "sala": "P1-S15",
+        "tipo": "Teórica"
+      },
+      {
+        "horario": "14:00 - 15:40",
+        "materia_id": 5,
+        "materia": "Física II",
+        "codigo": "F102",
+        "sala": "P1-S08",
+        "tipo": "Teórica"
+      }
+    ]
+  },
+  {
+    "dia": "Terça",
+    "dia_cod": "ter",
+    "aulas": [
+      {
+        "horario": "08:00 - 09:40",
+        "materia_id": 1,
+        "materia": "Interface Homem-máquina",
+        "codigo": "S205",
+        "sala": "P1-S17",
+        "tipo": "Teórica"
+      },
+      {
+        "horario": "10:00 - 11:40",
+        "materia_id": 3,
+        "materia": "Álgebra e Geometria",
+        "codigo": "M202",
+        "sala": "P1-S12",
+        "tipo": "Teórica"
+      },
+      {
+        "horario": "14:00 - 15:40",
+        "materia_id": 6,
+        "materia": "Programação Orientada a Objetos",
+        "codigo": "P201",
+        "sala": "P2-L05",
+        "tipo": "Prática"
+      }
+    ]
+  },
+  {
+    "dia": "Quarta",
+    "dia_cod": "qua",
+    "aulas": [
+      {
+        "horario": "08:00 - 09:40",
+        "materia_id": 2,
+        "materia": "Circuitos Elétricos",
+        "codigo": "E201",
+        "sala": "P2-L03",
+        "tipo": "Prática"
+      },
+      {
+        "horario": "10:00 - 11:40",
+        "materia_id": 4,
+        "materia": "Estruturas de Dados",
+        "codigo": "C301",
+        "sala": "P1-S18",
+        "tipo": "Teórica"
+      },
+      {
+        "horario": "14:00 - 15:40",
+        "materia_id": 1,
+        "materia": "Interface Homem-máquina",
+        "codigo": "S205",
+        "sala": "P2-L08",
+        "tipo": "Prática"
+      }
+    ]
+  },
+  {
+    "dia": "Quinta",
+    "dia_cod": "qui",
+    "aulas": [
+      {
+        "horario": "08:00 - 09:40",
+        "materia_id": 3,
+        "materia": "Álgebra e Geometria",
+        "codigo": "M202",
+        "sala": "P1-S12",
+        "tipo": "Teórica"
+      },
+      {
+        "horario": "10:00 - 11:40",
+        "materia_id": 5,
+        "materia": "Física II",
+        "codigo": "F102",
+        "sala": "P2-L02",
+        "tipo": "Prática"
+      },
+      {
+        "horario": "14:00 - 15:40",
+        "materia_id": 6,
+        "materia": "Programação Orientada a Objetos",
+        "codigo": "P201",
+        "sala": "P1-S20",
+        "tipo": "Teórica"
+      }
+    ]
+  },
+  {
+    "dia": "Sexta",
+    "dia_cod": "sex",
+    "aulas": [
+      {
+        "horario": "08:00 - 09:40",
+        "materia_id": 5,
+        "materia": "Física II",
+        "codigo": "F102",
+        "sala": "P1-S08",
+        "tipo": "Teórica"
+      },
+      {
+        "horario": "10:00 - 11:40",
+        "materia_id": 6,
+        "materia": "Programação Orientada a Objetos",
+        "codigo": "P201",
+        "sala": "P2-L05",
+        "tipo": "Prática"
+      }
+    ]
+  }
+]

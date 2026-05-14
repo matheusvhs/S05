@@ -1,0 +1,193 @@
+/* ========== NOTAS ESPECÍFICO ========== */
+
+.notas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nota-card {
+  background-color: var(--cor-fundo-card);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px var(--cor-sombra);
+  transition: all 0.3s ease;
+}
+
+.nota-card:hover {
+  box-shadow: 0 4px 16px var(--cor-sombra);
+  transform: translateY(-2px);
+}
+
+.nota-card.aprovado {
+  border-top: 4px solid var(--cor-sucesso);
+}
+
+.nota-card.recuperacao,
+.nota-card.np3 {
+  border-top: 4px solid var(--cor-alerta);
+}
+
+.nota-card.reprovado {
+  border-top: 4px solid var(--cor-erro);
+}
+
+.nota-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nota-materia-info h3 {
+  font-size: 1.4rem;
+  color: var(--cor-texto);
+  margin-bottom: 5px;
+}
+
+.nota-codigo {
+  color: var(--cor-texto-secundario);
+  font-size: 0.95rem;
+}
+
+.cr-display {
+  text-align: center;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
+  color: white;
+  border-radius: 12px;
+}
+
+.cr-label {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.cr-valor {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.avaliacoes-tabela {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.avaliacoes-tabela thead {
+  background-color: var(--cor-fundo-hover);
+}
+
+.avaliacoes-tabela th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--cor-texto);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--cor-borda);
+}
+
+.avaliacoes-tabela td {
+  padding: 15px;
+  border-bottom: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+}
+
+.avaliacoes-tabela tbody tr:hover {
+  background-color: var(--cor-fundo-hover);
+}
+
+.nota-valor {
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 5px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.nota-valor.alta {
+  background-color: var(--cor-nota-alta);
+  color: white;
+}
+
+.nota-valor.media {
+  background-color: var(--cor-nota-media);
+  color: white;
+}
+
+.nota-valor.baixa {
+  background-color: var(--cor-nota-baixa);
+  color: white;
+}
+
+.status-aprovacao {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.status-aprovacao.aprovado {
+  background-color: var(--cor-sucesso);
+}
+
+.status-aprovacao.recuperacao,
+.status-aprovacao.np3 {
+  background-color: var(--cor-alerta);
+}
+
+.status-aprovacao.reprovado {
+  background-color: var(--cor-erro);
+}
+
+.media-geral-destaque {
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.media-geral-destaque h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.media-geral-valor {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .nota-header {
+    flex-direction: column;
+  }
+  
+  .cr-display {
+    width: 100%;
+  }
+  
+  .avaliacoes-tabela {
+    font-size: 0.85rem;
+  }
+  
+  .avaliacoes-tabela th,
+  .avaliacoes-tabela td {
+    padding: 10px 8px;
+  }
+}

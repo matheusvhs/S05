@@ -1,0 +1,306 @@
+[
+  {
+    "id": 1,
+    "titulo": "Estágio em Desenvolvimento Full Stack",
+    "empresa": "TechFlow Solutions",
+    "logo": "🚀",
+    "localizacao": "Santa Rita do Sapucaí - MG",
+    "modalidade": "Híbrido",
+    "area": "Desenvolvimento",
+    "nivel": "Estágio",
+    "bolsa": "R$ 1.800,00",
+    "cargaHoraria": "30h/semana",
+    "dataPublicacao": "08/05/2026",
+    "destaque": true,
+    "descricao": "Buscamos estudante de Engenharia de Software para desenvolver soluções web modernas utilizando React, Node.js e bancos de dados relacionais.",
+    "requisitos": [
+      "Cursando Engenharia de Software (a partir do 6º período)",
+      "Conhecimento em JavaScript, HTML e CSS",
+      "Experiência com Git e versionamento",
+      "Conhecimento em React ou Vue.js (diferencial)",
+      "Inglês intermediário para leitura técnica"
+    ],
+    "beneficios": [
+      "Vale transporte",
+      "Vale alimentação R$ 25/dia",
+      "Plano de saúde",
+      "Day off no aniversário",
+      "Ambiente descontraído"
+    ],
+    "atividades": [
+      "Desenvolvimento de interfaces responsivas",
+      "Integração com APIs REST",
+      "Participação em code reviews",
+      "Desenvolvimento de testes automatizados",
+      "Trabalho em equipe ágil (Scrum)"
+    ],
+    "candidatos": 24,
+    "match": 95
+  },
+  {
+    "id": 2,
+    "titulo": "Estágio em Desenvolvimento Mobile",
+    "empresa": "AppMakers Brazil",
+    "logo": "📱",
+    "localizacao": "Remoto",
+    "modalidade": "Remoto",
+    "area": "Desenvolvimento",
+    "nivel": "Estágio",
+    "bolsa": "R$ 2.000,00",
+    "cargaHoraria": "30h/semana",
+    "dataPublicacao": "10/05/2026",
+    "destaque": true,
+    "descricao": "Oportunidade para desenvolver aplicativos mobile multiplataforma usando React Native e Flutter, criando experiências incríveis para usuários.",
+    "requisitos": [
+      "Cursando Engenharia de Software, Ciência da Computação ou áreas correlatas",
+      "Conhecimento em React Native ou Flutter",
+      "Noções de UI/UX Design",
+      "Familiaridade com APIs REST",
+      "Proatividade e vontade de aprender"
+    ],
+    "beneficios": [
+      "100% remoto",
+      "Auxílio home office R$ 200/mês",
+      "Plano de saúde e odontológico",
+      "Horário flexível",
+      "Cursos e certificações"
+    ],
+    "atividades": [
+      "Desenvolvimento de apps iOS e Android",
+      "Implementação de novas funcionalidades",
+      "Correção de bugs e otimizações",
+      "Integração com serviços backend",
+      "Publicação nas stores"
+    ],
+    "candidatos": 18,
+    "match": 88
+  },
+  {
+    "id": 3,
+    "titulo": "Estágio em DevOps e Cloud",
+    "empresa": "CloudTech Innovations",
+    "logo": "☁️",
+    "localizacao": "São Paulo - SP",
+    "modalidade": "Híbrido",
+    "area": "DevOps",
+    "nivel": "Estágio",
+    "bolsa": "R$ 2.200,00",
+    "cargaHoraria": "30h/semana",
+    "dataPublicacao": "09/05/2026",
+    "destaque": false,
+    "descricao": "Junte-se ao nosso time de DevOps para automatizar processos, gerenciar infraestrutura em cloud (AWS/Azure) e implementar práticas de CI/CD.",
+    "requisitos": [
+      "Cursando Engenharia de Software (7º período ou superior)",
+      "Conhecimento básico em Linux",
+      "Noções de Docker e containers",
+      "Interesse em automação e infraestrutura",
+      "Inglês intermediário"
+    ],
+    "beneficios": [
+      "Vale transporte + Vale refeição",
+      "Plano de saúde e odontológico",
+      "Certificações AWS/Azure pagas",
+      "Gympass",
+      "Ambiente colaborativo"
+    ],
+    "atividades": [
+      "Gerenciamento de servidores cloud",
+      "Automação de deploys",
+      "Monitoramento de aplicações",
+      "Criação de pipelines CI/CD",
+      "Documentação técnica"
+    ],
+    "candidatos": 31,
+    "match": 78
+  },
+  {
+    "id": 4,
+    "titulo": "Estágio em Quality Assurance (QA)",
+    "empresa": "TestPro Solutions",
+    "logo": "🧪",
+    "localizacao": "Belo Horizonte - MG",
+    "modalidade": "Presencial",
+    "area": "Qualidade",
+    "nivel": "Estágio",
+    "bolsa": "R$ 1.600,00",
+    "cargaHoraria": "30h/semana",
+    "dataPublicacao": "07/05/2026",
+    "destaque": false,
+    "descricao": "Vaga para estudante interessado em garantir a qualidade de software através de testes manuais e automatizados, reportando bugs e melhorias.",
+    "requisitos": [
+      "Cursando Engenharia de Software ou áreas relacionadas",
+      "Atenção aos detalhes e perfil analítico",
+      "Conhecimento básico de programação",
+      "Vontade de aprender automação de testes",
+      "Boa comunicação escrita"
+    ],
+    "beneficios": [
+      "Vale transporte e alimentação",
+      "Plano de saúde após 3 meses",
+      "Treinamento em ferramentas de teste",
+      "Plano de carreira estruturado",
+      "Ambiente de aprendizado"
+    ],
+    "atividades": [
+      "Execução de testes manuais",
+      "Criação de casos de teste",
+      "Reporte e acompanhamento de bugs",
+      "Testes de regressão",
+      "Apoio na automação de testes"
+    ],
+    "candidatos": 15,
+    "match": 72
+  },
+  {
+    "id": 5,
+    "titulo": "Estágio em UX/UI Design",
+    "empresa": "Design Hub Studio",
+    "logo": "🎨",
+    "localizacao": "Remoto",
+    "modalidade": "Remoto",
+    "area": "Design",
+    "nivel": "Estágio",
+    "bolsa": "R$ 1.700,00",
+    "cargaHoraria": "20h/semana",
+    "dataPublicacao": "11/05/2026",
+    "destaque": true,
+    "descricao": "Oportunidade para criar interfaces intuitivas e experiências memoráveis, trabalhando com Figma, prototipação e pesquisa com usuários.",
+    "requisitos": [
+      "Cursando Engenharia de Software, Design ou áreas correlatas",
+      "Portfólio com projetos de UI/UX",
+      "Domínio de Figma ou Adobe XD",
+      "Conhecimento de Design Thinking",
+      "Criatividade e senso estético"
+    ],
+    "beneficios": [
+      "100% remoto com flexibilidade",
+      "Auxílio internet R$ 100/mês",
+      "Acesso a cursos de design",
+      "Mentoria com designers sênior",
+      "Possibilidade de efetivação"
+    ],
+    "atividades": [
+      "Criação de wireframes e protótipos",
+      "Design de interfaces web e mobile",
+      "Pesquisa com usuários",
+      "Criação de design systems",
+      "Testes de usabilidade"
+    ],
+    "candidatos": 22,
+    "match": 65
+  },
+  {
+    "id": 6,
+    "titulo": "Estágio em Análise de Dados",
+    "empresa": "DataInsights Corp",
+    "logo": "📊",
+    "localizacao": "Campinas - SP",
+    "modalidade": "Híbrido",
+    "area": "Dados",
+    "nivel": "Estágio",
+    "bolsa": "R$ 1.900,00",
+    "cargaHoraria": "30h/semana",
+    "dataPublicacao": "06/05/2026",
+    "destaque": false,
+    "descricao": "Transforme dados em insights valiosos! Trabalhe com Python, SQL, visualização de dados e apoie decisões estratégicas com análises.",
+    "requisitos": [
+      "Cursando Engenharia de Software ou áreas relacionadas",
+      "Conhecimento em Python e SQL",
+      "Noções de estatística",
+      "Experiência com Excel/Google Sheets",
+      "Raciocínio lógico e analítico"
+    ],
+    "beneficios": [
+      "Vale transporte + Refeição no local",
+      "Plano de saúde",
+      "Treinamento em ferramentas de BI",
+      "Ambiente data-driven",
+      "Possibilidade de efetivação"
+    ],
+    "atividades": [
+      "Extração e tratamento de dados",
+      "Criação de dashboards e relatórios",
+      "Análise exploratória de dados",
+      "Apoio em projetos de machine learning",
+      "Apresentação de insights"
+    ],
+    "candidatos": 28,
+    "match": 82
+  },
+  {
+    "id": 7,
+    "titulo": "Estágio em Segurança da Informação",
+    "empresa": "SecureNet Systems",
+    "logo": "🔒",
+    "localizacao": "São Paulo - SP",
+    "modalidade": "Presencial",
+    "area": "Segurança",
+    "nivel": "Estágio",
+    "bolsa": "R$ 2.100,00",
+    "cargaHoraria": "30h/semana",
+    "dataPublicacao": "05/05/2026",
+    "destaque": false,
+    "descricao": "Proteja sistemas e dados corporativos! Aprenda sobre pentest, análise de vulnerabilidades e segurança de redes em projetos reais.",
+    "requisitos": [
+      "Cursando Engenharia de Software (a partir do 7º período)",
+      "Conhecimento em redes de computadores",
+      "Interesse em segurança e hacking ético",
+      "Noções de Linux e Windows Server",
+      "Certificações (CEH, Security+) são diferenciais"
+    ],
+    "beneficios": [
+      "Vale transporte e alimentação",
+      "Plano de saúde completo",
+      "Certificações em segurança pagas",
+      "Eventos e conferências",
+      "Ambiente desafiador"
+    ],
+    "atividades": [
+      "Análise de vulnerabilidades",
+      "Monitoramento de logs de segurança",
+      "Testes de penetração supervisionados",
+      "Implementação de políticas de segurança",
+      "Resposta a incidentes"
+    ],
+    "candidatos": 19,
+    "match": 70
+  },
+  {
+    "id": 8,
+    "titulo": "Estágio em Desenvolvimento Backend",
+    "empresa": "BackendPro Tech",
+    "logo": "⚙️",
+    "localizacao": "Remoto",
+    "modalidade": "Remoto",
+    "area": "Desenvolvimento",
+    "nivel": "Estágio",
+    "bolsa": "R$ 1.950,00",
+    "cargaHoraria": "30h/semana",
+    "dataPublicacao": "10/05/2026",
+    "destaque": false,
+    "descricao": "Desenvolva APIs robustas e escaláveis usando Node.js, Python ou Java. Trabalhe com microsserviços, bancos de dados e arquitetura cloud.",
+    "requisitos": [
+      "Cursando Engenharia de Software ou Ciência da Computação",
+      "Conhecimento em pelo menos uma linguagem backend",
+      "Noções de bancos de dados (SQL e NoSQL)",
+      "Conhecimento de APIs REST",
+      "Git e metodologias ágeis"
+    ],
+    "beneficios": [
+      "Trabalho 100% remoto",
+      "Equipamento fornecido",
+      "Plano de saúde após 2 meses",
+      "Auxílio educação para cursos",
+      "Cultura de feedback"
+    ],
+    "atividades": [
+      "Desenvolvimento de APIs REST",
+      "Integração com serviços externos",
+      "Otimização de queries",
+      "Implementação de testes unitários",
+      "Documentação de código"
+    ],
+    "candidatos": 35,
+    "match": 90
+  }
+]

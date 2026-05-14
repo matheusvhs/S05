@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "tipo": "vaga",
+    "icone": "work",
+    "mensagem": "🔥 Nova vaga de Desenvolvimento Mobile com 88% de match!",
+    "data": "10/05/2026",
+    "lida": false,
+    "link": "pages/vagas.html"
+  },
+  {
+    "id": 2,
+    "tipo": "vaga",
+    "icone": "work",
+    "mensagem": "✨ Vaga em destaque: Estágio Full Stack - 95% de compatibilidade",
+    "data": "10/05/2026",
+    "lida": false,
+    "link": "pages/vagas.html"
+  },
+  {
+    "id": 3,
+    "tipo": "notificacao",
+    "icone": "notifications_active",
+    "mensagem": "Você possui um armário reservado com entrega para hoje...",
+    "data": "10/05/2026",
+    "lida": false
+  },
+  {
+    "id": 4,
+    "tipo": "alerta",
+    "icone": "mail",
+    "mensagem": "Você possui uma pendência no financeiro...",
+    "data": "09/05/2026",
+    "lida": false
+  },
+  {
+    "id": 5,
+    "tipo": "prova",
+    "icone": "school",
+    "mensagem": "Prova de Física II amanhã às 08:00 na sala P1-S08",
+    "data": "10/05/2026",
+    "lida": false
+  },
+  {
+    "id": 6,
+    "tipo": "aviso",
+    "icone": "info",
+    "mensagem": "Período de matrícula para 2026.1 abre na próxima semana",
+    "data": "08/05/2026",
+    "lida": true
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "materia_id": 1,
+    "codigo": "S205",
+    "materia": "Interface Homem-máquina",
+    "avaliacoes": [
+      {
+        "tipo": "Prova 1",
+        "data": "15/05/2026",
+        "nota": 95,
+        "peso": 3
+      },
+      {
+        "tipo": "Trabalho Prático",
+        "data": "20/05/2026",
+        "nota": 100,
+        "peso": 2
+      },
+      {
+        "tipo": "Prova 2",
+        "data": "15/05/2026",
+        "nota": 85,
+        "peso": 3
+      }
+    ],
+    "media": 91,
+    "cr": 91,
+    "status": "Aprovado"
+  },
+  {
+    "materia_id": 2,
+    "codigo": "E201",
+    "materia": "Circuitos Elétricos",
+    "avaliacoes": [
+      {
+        "tipo": "Prova 1",
+        "data": "18/05/2026",
+        "nota": 60,
+        "peso": 4
+      },
+      {
+        "tipo": "Prova 2",
+        "data": "18/05/2026",
+        "nota": 45,
+        "peso": 4
+      },
+      {
+        "tipo": "Trabalho",
+        "data": "25/05/2026",
+        "nota": 70,
+        "peso": 2
+      }
+    ],
+    "media": 56,
+    "cr": 56,
+    "status": "NP3"
+  },
+  {
+    "materia_id": 3,
+    "codigo": "M202",
+    "materia": "Álgebra e Geometria",
+    "avaliacoes": [
+      {
+        "tipo": "Prova 1",
+        "data": "12/05/2026",
+        "nota": 75,
+        "peso": 3
+      },
+      {
+        "tipo": "Lista de Exercícios",
+        "data": "10/05/2026",
+        "nota": 80,
+        "peso": 2
+      },
+      {
+        "tipo": "Prova 2",
+        "data": "12/05/2026",
+        "nota": 65,
+        "peso": 3
+      }
+    ],
+    "media": 72,
+    "cr": 72,
+    "status": "Aprovado"
+  },
+  {
+    "materia_id": 4,
+    "codigo": "C301",
+    "materia": "Estruturas de Dados",
+    "avaliacoes": [
+      {
+        "tipo": "Prova 1",
+        "data": "16/05/2026",
+        "nota": 90,
+        "peso": 3
+      },
+      {
+        "tipo": "Projeto Prático",
+        "data": "22/05/2026",
+        "nota": 100,
+        "peso": 4
+      },
+      {
+        "tipo": "Prova 2",
+        "data": "16/05/2026",
+        "nota": 80,
+        "peso": 3
+      }
+    ],
+    "media": 90,
+    "cr": 90,
+    "status": "Aprovado"
+  },
+  {
+    "materia_id": 5,
+    "codigo": "F102",
+    "materia": "Física II",
+    "avaliacoes": [
+      {
+        "tipo": "Prova 1",
+        "data": "19/05/2026",
+        "nota": 55,
+        "peso": 4
+      },
+      {
+        "tipo": "Prova 2",
+        "data": "19/05/2026",
+        "nota": 60,
+        "peso": 4
+      },
+      {
+        "tipo": "Relatórios",
+        "data": "30/05/2026",
+        "nota": 75,
+        "peso": 2
+      }
+    ],
+    "media": 61,
+    "cr": 61,
+    "status": "Aprovado"
+  },
+  {
+    "materia_id": 6,
+    "codigo": "P201",
+    "materia": "Programação Orientada a Objetos",
+    "avaliacoes": [
+      {
+        "tipo": "Prova 1",
+        "data": "17/05/2026",
+        "nota": 85,
+        "peso": 3
+      },
+      {
+        "tipo": "Projeto POO",
+        "data": "24/05/2026",
+        "nota": 95,
+        "peso": 4
+      },
+      {
+        "tipo": "Prova 2",
+        "data": "17/05/2026",
+        "nota": 75,
+        "peso": 3
+      }
+    ],
+    "media": 85,
+    "cr": 85,
+    "status": "Aprovado"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "materia_id": 1,
+    "codigo": "S205",
+    "materia": "Interface Homem-máquina",
+    "total_aulas": 40,
+    "aulas_dadas": 32,
+    "presencas": 30,
+    "faltas": 2,
+    "percentual_presenca": 93.75,
+    "status": "ok",
+    "limite_faltas": 8,
+    "faltas_restantes": 6
+  },
+  {
+    "materia_id": 2,
+    "codigo": "E201",
+    "materia": "Circuitos Elétricos",
+    "total_aulas": 40,
+    "aulas_dadas": 32,
+    "presencas": 28,
+    "faltas": 4,
+    "percentual_presenca": 87.5,
+    "status": "alerta",
+    "limite_faltas": 8,
+    "faltas_restantes": 4
+  },
+  {
+    "materia_id": 3,
+    "codigo": "M202",
+    "materia": "Álgebra e Geometria",
+    "total_aulas": 40,
+    "aulas_dadas": 32,
+    "presencas": 26,
+    "faltas": 6,
+    "percentual_presenca": 81.25,
+    "status": "alerta",
+    "limite_faltas": 8,
+    "faltas_restantes": 2
+  },
+  {
+    "materia_id": 4,
+    "codigo": "C301",
+    "materia": "Estruturas de Dados",
+    "total_aulas": 40,
+    "aulas_dadas": 32,
+    "presencas": 31,
+    "faltas": 1,
+    "percentual_presenca": 96.87,
+    "status": "ok",
+    "limite_faltas": 8,
+    "faltas_restantes": 7
+  },
+  {
+    "materia_id": 5,
+    "codigo": "F102",
+    "materia": "Física II",
+    "total_aulas": 40,
+    "aulas_dadas": 32,
+    "presencas": 24,
+    "faltas": 8,
+    "percentual_presenca": 75.0,
+    "status": "critico",
+    "limite_faltas": 8,
+    "faltas_restantes": 0
+  },
+  {
+    "materia_id": 6,
+    "codigo": "P201",
+    "materia": "Programação Orientada a Objetos",
+    "total_aulas": 40,
+    "aulas_dadas": 32,
+    "presencas": 29,
+    "faltas": 3,
+    "percentual_presenca": 90.62,
+    "status": "ok",
+    "limite_faltas": 8,
+    "faltas_restantes": 5
+  }
+]
