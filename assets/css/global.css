@@ -384,6 +384,89 @@ main {
   animation: fadeIn 0.5s ease-out;
 }
 
+/* ========== BOTTOM NAVIGATION ========== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-color: var(--cor-fundo-card);
+  border-top: 1px solid var(--cor-borda);
+  display: flex;
+  align-items: stretch;
+  z-index: 1500;
+  box-shadow: 0 -2px 12px var(--cor-sombra);
+  transition: background-color 0.3s ease;
+}
+
+.bottom-nav .nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: var(--cor-texto-secundario);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 8px 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Arimo', 'Segoe UI', sans-serif;
+}
+
+.bottom-nav .nav-item .material-symbols-outlined {
+  font-size: 22px;
+  color: inherit;
+}
+
+.bottom-nav .nav-item.active,
+.bottom-nav .nav-item:hover {
+  color: var(--cor-primaria);
+}
+
+.bottom-nav .nav-item-destaque .material-symbols-outlined {
+  font-size: 26px;
+}
+
+.bottom-nav .nav-item-destaque.active .material-symbols-outlined,
+.bottom-nav .nav-item-destaque:hover .material-symbols-outlined {
+  color: var(--cor-primaria);
+}
+
+/* Tablet: bottom nav fica na parte inferior mas com altura maior */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bottom-nav {
+    height: 72px;
+  }
+
+  .bottom-nav .nav-item {
+    font-size: 0.7rem;
+  }
+
+  .bottom-nav .nav-item .material-symbols-outlined {
+    font-size: 26px;
+  }
+}
+
+/* Desktop: esconde bottom nav */
+@media (min-width: 1025px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+/* Padding inferior em main para não ficar atrás do bottom nav */
+@media (max-width: 1024px) {
+  main {
+    padding-bottom: 80px;
+  }
+}
+
 /* ========== SCROLLBAR CUSTOMIZADA ========== */
 ::-webkit-scrollbar {
   width: 10px;

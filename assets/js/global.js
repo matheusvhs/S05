@@ -170,9 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function mostrarToast(mensagem, tipo = 'info') {
     const toast = document.createElement('div');
     toast.className = `toast toast-${tipo}`;
+    const bottomOffset = window.innerWidth <= 1024 ? '85px' : '20px';
     toast.style.cssText = `
         position: fixed;
-        bottom: 20px;
+        bottom: ${bottomOffset};
         right: 20px;
         background: var(--cor-fundo-card);
         color: var(--cor-texto);
@@ -241,5 +242,13 @@ loadingStyle.textContent = `
     }
 `;
 document.head.appendChild(loadingStyle);
+
+// ========== BOTTOM NAVIGATION ==========
+document.getElementById('abrirMenuCompleto')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    sidebar?.classList.add('active');
+    sidebarOverlay?.classList.add('active');
+    document.body.style.overflow = 'hidden';
+});
 
 console.log('✅ Global.js carregado com sucesso!');

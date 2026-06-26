@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendário Acadêmico - Portal Acadêmico</title>
+    <title>Cardápio da Neide - Portal Acadêmico</title>
     <link rel="stylesheet" href="../assets/css/global.css">
-    <link rel="stylesheet" href="../assets/css/calendario.css">
+    <link rel="stylesheet" href="../assets/css/neide.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
@@ -29,10 +29,10 @@
             <li><a href="horarios.html"><span class="material-symbols-outlined">schedule</span>Horários</a></li>
             <li><a href="frequencia.html"><span class="material-symbols-outlined">fact_check</span>Frequência</a></li>
             <li><a href="notas.html"><span class="material-symbols-outlined">grade</span>Notas</a></li>
-            <li><a href="calendario.html" class="active"><span class="material-symbols-outlined">calendar_month</span>Calendário</a></li>
+            <li><a href="calendario.html"><span class="material-symbols-outlined">calendar_month</span>Calendário</a></li>
             <li><a href="graficos.html"><span class="material-symbols-outlined">bar_chart</span>Gráficos</a></li>
             <li><a href="vagas.html"><span class="material-symbols-outlined">work</span>Vagas</a></li>
-            <li><a href="neide.html"><span class="material-symbols-outlined">restaurant</span>Cardápio da Neide</a></li>
+            <li><a href="neide.html" class="active"><span class="material-symbols-outlined">restaurant</span>Cardápio da Neide</a></li>
             <li><a href="perfil.html"><span class="material-symbols-outlined">person</span>Perfil</a></li>
         </ul>
         <div class="sidebar-footer">
@@ -47,47 +47,122 @@
     </nav>
 
     <main>
-        <div class="calendario-header fade-in">
-            <h1>📅 Calendário Acadêmico</h1>
-            <div class="calendario-controls">
-                <button class="btn-mes" id="mesPrev">
-                    <span class="material-symbols-outlined">chevron_left</span>
-                </button>
-                <h2 id="mesAnoAtual">Novembro 2026</h2>
-                <button class="btn-mes" id="mesNext">
-                    <span class="material-symbols-outlined">chevron_right</span>
-                </button>
+        <!-- Header da Neide -->
+        <div class="neide-header fade-in">
+            <div class="neide-header-top">
+                <div>
+                    <h1 class="neide-titulo">🍽️ Cardápio da Neide</h1>
+                    <p class="neide-subtitulo">A cantina mais famosa do Inatel</p>
+                </div>
+                <div class="neide-header-icon">🏠</div>
+            </div>
+            <div class="neide-stats">
+                <div class="neide-stat">
+                    <div class="neide-stat-valor" id="statTotalPratos">—</div>
+                    <div class="neide-stat-label">Total de Pratos</div>
+                </div>
+                <div class="neide-stat">
+                    <div class="neide-stat-valor" id="statPratosHoje">—</div>
+                    <div class="neide-stat-label">Pratos do Dia</div>
+                </div>
+                <div class="neide-stat">
+                    <div class="neide-stat-valor" id="statMelhorAvaliado">—</div>
+                    <div class="neide-stat-label">Melhor Avaliado</div>
+                </div>
             </div>
         </div>
 
-        <div class="calendario-container fade-in">
-            <div class="calendario-grid" id="calendarioGrid">
-                <!-- Dias da semana -->
-                <div class="dia-semana">Dom</div>
-                <div class="dia-semana">Seg</div>
-                <div class="dia-semana">Ter</div>
-                <div class="dia-semana">Qua</div>
-                <div class="dia-semana">Qui</div>
-                <div class="dia-semana">Sex</div>
-                <div class="dia-semana">Sáb</div>
-                <!-- Dias serão inseridos aqui pelo JavaScript -->
+        <!-- Tabs de dia da semana -->
+        <div class="dias-container">
+            <div class="dias-scroll" id="diasScroll">
+                <!-- Renderizado pelo JS -->
             </div>
         </div>
 
-        <div class="detalhes-dia-container" id="detalhesDiaContainer" style="display: none;">
-            <div class="detalhes-dia-card fade-in">
-                <div class="detalhes-dia-header">
-                    <h2 id="detalhesDiaTitle">Detalhes do Dia</h2>
-                    <button class="btn-fechar" id="fecharDetalhes">
-                        <span class="material-symbols-outlined">close</span>
-                    </button>
-                </div>
-                <div id="detalhesDiaContent">
-                    <!-- Conteúdo será inserido aqui -->
-                </div>
+        <!-- Chips de categoria -->
+        <div class="categorias-container">
+            <div class="categorias-scroll" id="categoriasScroll">
+                <!-- Renderizado pelo JS -->
+            </div>
+        </div>
+
+        <!-- Grade de pratos -->
+        <div class="pratos-section">
+            <div class="pratos-section-titulo" id="pratosSecaoTitulo">Carregando...</div>
+            <div class="pratos-grid" id="pratosGrid">
+                <!-- Renderizado pelo JS -->
+            </div>
+        </div>
+
+        <!-- Top 3 mais bem avaliados -->
+        <div class="top3-section fade-in">
+            <div class="top3-titulo">
+                <span class="material-symbols-outlined" style="color:#f4a62a">workspace_premium</span>
+                Mais Bem Avaliados
+            </div>
+            <div class="top3-lista" id="top3Lista">
+                <!-- Renderizado pelo JS -->
             </div>
         </div>
     </main>
+
+    <!-- Modal de detalhes do prato -->
+    <div class="modal-neide-overlay" id="modalNeideOverlay">
+        <div class="modal-neide">
+            <div class="modal-header-neide">
+                <span style="font-size:0.85rem;font-weight:600;color:var(--cor-texto-secundario)">Detalhes do Prato</span>
+                <button class="modal-fechar" id="modalFechar" aria-label="Fechar">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-corpo">
+                <div class="modal-emoji-grande" id="modalEmoji">🍔</div>
+                <div class="modal-nome-prato" id="modalNome">—</div>
+                <div class="modal-badges-row" id="modalBadges"></div>
+                <div class="modal-preco" id="modalPreco">—</div>
+
+                <div class="modal-secao">
+                    <div class="modal-secao-titulo">
+                        <span class="material-symbols-outlined">description</span>
+                        Descrição
+                    </div>
+                    <div class="modal-descricao" id="modalDescricao">—</div>
+                </div>
+
+                <div class="modal-divider"></div>
+
+                <div class="modal-secao">
+                    <div class="modal-secao-titulo">
+                        <span class="material-symbols-outlined">lunch_dining</span>
+                        Ingredientes
+                    </div>
+                    <div class="modal-tags-lista" id="modalIngredientes"></div>
+                </div>
+
+                <div class="modal-secao" id="modalAlergicosSection">
+                    <div class="modal-secao-titulo">
+                        <span class="material-symbols-outlined">warning</span>
+                        Alérgicos
+                    </div>
+                    <div class="modal-tags-lista" id="modalAlergicos"></div>
+                </div>
+
+                <div class="modal-divider"></div>
+
+                <!-- Avaliação atual -->
+                <div class="avaliacao-atual">
+                    <div class="avaliacao-media-numero" id="modalMediaNumero">—</div>
+                    <div class="avaliacao-estrelas-visuais" id="modalEstrelasVisuais"></div>
+                    <div class="avaliacao-total-texto" id="modalTotalAvaliacoes"></div>
+                </div>
+
+                <!-- Avaliar -->
+                <div class="avaliar-section" id="avaliarSection">
+                    <!-- Renderizado pelo JS -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bottom Navigation -->
     <nav class="bottom-nav">
@@ -99,7 +174,7 @@
             <span class="material-symbols-outlined">schedule</span>
             <span>Horários</span>
         </a>
-        <a href="neide.html" class="nav-item nav-item-destaque" data-page="neide">
+        <a href="neide.html" class="nav-item nav-item-destaque active" data-page="neide">
             <span class="material-symbols-outlined">restaurant</span>
             <span>Neide</span>
         </a>
@@ -114,6 +189,6 @@
     </nav>
 
     <script src="../assets/js/global.js"></script>
-    <script src="../assets/js/calendario.js"></script>
+    <script src="../assets/js/neide.js"></script>
 </body>
 </html>
