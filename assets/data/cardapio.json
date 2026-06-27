@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "nome": "X-Burgão da Neide",
+    "nome": "Hamburgão da Neide",
     "categoria": "Lanches",
     "emoji": "🍔",
-    "descricao": "O clássico favorito do Inatel! Pão brioche tostado, dois hambúrgueres artesanais de 90g, queijo mussarela derretido, alface crocante, tomate fresco e o famoso molho especial da Neide.",
+    "descricao": "O clássico favorito do Inatel!.",
     "preco": 18.50,
     "prato_do_dia": ["seg", "qua", "sex"],
     "destaque": true,
     "total_avaliacoes": 89,
     "soma_avaliacoes": 419,
-    "ingredientes": ["Pão brioche", "2x hambúrguer artesanal 90g", "Queijo mussarela", "Alface americana", "Tomate", "Molho especial da Neide"],
+    "ingredientes": ["1x hambúrguer 90g", "Queijo mussarela", "Tomate"],
     "alergicos": ["Glúten", "Lactose", "Ovos"]
   },
   {
     "id": 2,
-    "nome": "Misto Quente",
+    "nome": "Hamburgão de Pernil",
     "categoria": "Lanches",
     "emoji": "🥪",
-    "descricao": "Pão de forma quentinho na chapa, recheado com presunto e queijo derretido. Simples, rápido e perfeito entre uma aula e outra.",
+    "descricao": "O clássico favorito do Inatel, agora na versão de pernil.",
     "preco": 7.50,
     "prato_do_dia": ["ter", "qui"],
     "destaque": false,
     "total_avaliacoes": 34,
     "soma_avaliacoes": 143,
-    "ingredientes": ["Pão de forma", "Presunto", "Queijo muçarela"],
+    "ingredientes": ["Pernil", "Queijo muçarela"],
     "alergicos": ["Glúten", "Lactose"]
   },
   {
     "id": 3,
-    "nome": "X-Frango Especial",
+    "nome": "Telebacon da Neide",
     "categoria": "Lanches",
     "emoji": "🍗",
-    "descricao": "Frango empanado crocante com cream cheese, alface, tomate, milho e barbecue em pão ciabatta. A opção premium da Neide.",
+    "descricao": "Para o tamanho da fome do estudante de Engenharia.",
     "preco": 16.00,
     "prato_do_dia": ["sex", "seg"],
     "destaque": true,
     "total_avaliacoes": 52,
     "soma_avaliacoes": 234,
-    "ingredientes": ["Pão ciabatta", "Frango empanado", "Cream cheese", "Alface", "Tomate", "Milho", "Molho barbecue"],
+    "ingredientes": ["Frango desfiado", "Milho", "Bacon"],
     "alergicos": ["Glúten", "Lactose"]
   },
   {
@@ -46,7 +46,7 @@
     "nome": "Cachorro Quente da Neide",
     "categoria": "Lanches",
     "emoji": "🌭",
-    "descricao": "Salsicha grelhada no pão francês com ketchup, mostarda, milho, purê de batata e batata palha. Tradição de cantina!",
+    "descricao": "Salsicha grelhada no pão com ketchup, mostarda, milho, purê de batata e batata palha. Tradição de cantina!",
     "preco": 9.00,
     "prato_do_dia": ["qua", "qui", "sex"],
     "destaque": false,
@@ -57,20 +57,6 @@
   },
   {
     "id": 5,
-    "nome": "Prato do Dia — Frango Grelhado",
-    "categoria": "Refeições",
-    "emoji": "🍽️",
-    "descricao": "Frango grelhado temperado, arroz branco soltinho, feijão carioca bem temperado, salada de legumes da época e farofa crocante. Refeiçãozinha da mamãe!",
-    "preco": 15.00,
-    "prato_do_dia": ["seg", "ter", "qui"],
-    "destaque": true,
-    "total_avaliacoes": 67,
-    "soma_avaliacoes": 288,
-    "ingredientes": ["Frango grelhado", "Arroz branco", "Feijão carioca", "Salada de legumes", "Farofa"],
-    "alergicos": []
-  },
-  {
-    "id": 6,
     "nome": "Macarrão ao Sugo",
     "categoria": "Refeições",
     "emoji": "🍝",
@@ -84,7 +70,7 @@
     "alergicos": ["Glúten", "Lactose"]
   },
   {
-    "id": 7,
+    "id": 6,
     "nome": "Strogonoff de Frango",
     "categoria": "Refeições",
     "emoji": "🥘",
@@ -98,7 +84,7 @@
     "alergicos": ["Lactose"]
   },
   {
-    "id": 8,
+    "id": 7,
     "nome": "Arroz, Feijão e Bife",
     "categoria": "Refeições",
     "emoji": "🥩",
@@ -112,7 +98,7 @@
     "alergicos": []
   },
   {
-    "id": 9,
+    "id": 8,
     "nome": "Suco Natural da Neide",
     "categoria": "Bebidas",
     "emoji": "🥤",
@@ -126,7 +112,7 @@
     "alergicos": []
   },
   {
-    "id": 10,
+    "id": 9,
     "nome": "Refrigerante Lata",
     "categoria": "Bebidas",
     "emoji": "🥫",
@@ -140,7 +126,7 @@
     "alergicos": []
   },
   {
-    "id": 11,
+    "id": 10,
     "nome": "Café Fresquinho",
     "categoria": "Bebidas",
     "emoji": "☕",
@@ -154,7 +140,7 @@
     "alergicos": ["Lactose (versão com leite)"]
   },
   {
-    "id": 12,
+    "id": 11,
     "nome": "Vitamina de Frutas",
     "categoria": "Bebidas",
     "emoji": "🥛",
@@ -168,7 +154,7 @@
     "alergicos": ["Lactose"]
   },
   {
-    "id": 13,
+    "id": 12,
     "nome": "Pudim da Neide",
     "categoria": "Sobremesas",
     "emoji": "🍮",
@@ -182,7 +168,7 @@
     "alergicos": ["Lactose", "Ovos"]
   },
   {
-    "id": 14,
+    "id": 13,
     "nome": "Brigadeiro Artesanal",
     "categoria": "Sobremesas",
     "emoji": "🍫",
@@ -196,7 +182,7 @@
     "alergicos": ["Lactose"]
   },
   {
-    "id": 15,
+    "id": 14,
     "nome": "Torta de Limão",
     "categoria": "Sobremesas",
     "emoji": "🥧",
@@ -210,7 +196,7 @@
     "alergicos": ["Glúten", "Lactose", "Ovos"]
   },
   {
-    "id": 16,
+    "id": 15,
     "nome": "Sorvete de Creme",
     "categoria": "Sobremesas",
     "emoji": "🍦",
